@@ -1,95 +1,62 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import styles from '../styles/style.css';
+import Link from 'next/link';
+import Image from 'next/image';
 
-export default function Home() {
+import { Button, Container, Row, Col } from 'react-bootstrap';
+
+
+const Home = () => {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    <div className='light'>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      <header className='header'>
+        <h1 className="logo">Logo</h1>
+        <i class="bi bi-list icons"></i>
+        <nav className='navbar'>
+            <Link className='links' href={"/"}>Home</Link>
+            <Link className='links' href={"/"}>About</Link>
+            <Link className='links' href={"/"}>Contact</Link>
+            <Link className='links' href={"/"}>Service</Link>
+        </nav>
+      </header>
+      <section>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <Container className='container-xl'>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+          <Row>
+            <Col className='sec1 d-flex justify-content-center align-items-center'>
+              <div className="card customCard glass-card" style={{ width: "30rem" }}>
+                <Image src={"/assets/astro.png"} width={250} height={250} className='floatingAstroOnCard'></Image>
+                <div className="card-body">
+                  <h5 className="card-title">Welcome to My Portfolio</h5>
+                  <p className="card-text mt-4 text-center desc">Hello and welcome to my portfolio! I'm <b>John Paul Orencio</b>, a passionate software developer with a knack for creating elegant and efficient solutions. My journey in technology has been fueled by a deep curiosity and a drive to continuously learn and innovate.
+                  </p>
+                </div>
+              </div>
+            </Col>
+            <Col>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
+            </Col>
+          </Row>
+        </Container>
+      </section>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </div>
   );
-}
+};
+
+export default Home;
