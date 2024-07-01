@@ -117,7 +117,7 @@ body {
     height: 100vh;
 }
 
-.header{
+.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -127,11 +127,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
 }
 
 
-.logo{
+.logo {
     font-size: 2rem;
     color: #fff;
     text-decoration: none;
@@ -139,15 +139,16 @@ body {
     color: white;
 }
 
-.navbar .links{
+.navbar .links {
     font-size: 1.15rem;
     color: #fff;
     text-decoration: none;
     font-weight: 500;
-    margin-left: 2.5rem;
+    margin-left: .5rem;
+    right: -7rem;
 }
 
-.icons{
+.icons {
     font-size: 2.8rem;
     color: #fff;
     cursor: pointer;
@@ -231,123 +232,137 @@ body {
     }
 }
 
-@keyframes animateBg{
-    0%,100%{
+@keyframes animateBg {
+
+    0%,
+    100% {
         transform: scale(1);
     }
-    50%{
+
+    50% {
         transform: scale(1.2);
     }
 }
 
-span{
+span {
     position: absolute;
-    top:50%;
-    left:50%;
+    top: 50%;
+    left: 50%;
     width: 4px;
     height: 4px;
     background: #fff;
     border-radius: 50%;
-    box-shadow: 0 0 0 4px rgba(255,255,255,0.1),0 0 0 8px rgba(255,255,255,0.1),0 0 20px rgba(255,255,255,0.1);
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 0 8px rgba(255, 255, 255, 0.1), 0 0 20px rgba(255, 255, 255, 0.1);
     animation: animate 3s linear infinite;
 }
-span::before{
-    content:'';
+
+span::before {
+    content: '';
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     width: 300px;
     height: 1px;
-    background: linear-gradient(90deg,#fff,transparent);
+    background: linear-gradient(90deg, #fff, transparent);
 }
-@keyframes animate
-{
-    0%
-    {
+
+@keyframes animate {
+    0% {
         transform: rotate(315deg) translateX(0);
         opacity: 1;
     }
-    70%
-    {
+
+    70% {
         opacity: 1;
     }
-    100%
-    {
+
+    100% {
         transform: rotate(315deg) translateX(-1000px);
         opacity: 0;
     }
 }
-span:nth-child(1){
+
+span:nth-child(1) {
     top: 0;
     right: 0;
     left: initial;
     animation-delay: 0s;
     animation-duration: 1s;
 }
-span:nth-child(2){
+
+span:nth-child(2) {
     top: 0;
     right: 80px;
     left: initial;
     animation-delay: 0.2s;
     animation-duration: 3s;
 }
-span:nth-child(3){
+
+span:nth-child(3) {
     top: 80;
     right: 0px;
     left: initial;
     animation-delay: 0.4s;
     animation-duration: 2s;
 }
-span:nth-child(4){
+
+span:nth-child(4) {
     top: 0;
     right: 180px;
     left: initial;
     animation-delay: 0.6s;
     animation-duration: 1.5s;
 }
-span:nth-child(5){
+
+span:nth-child(5) {
     top: 0;
     right: 400px;
     left: initial;
     animation-delay: 0.8s;
     animation-duration: 2.5s;
 }
-span:nth-child(6){
+
+span:nth-child(6) {
     top: 0;
     right: 600px;
     left: initial;
     animation-delay: 1s;
     animation-duration: 3s;
 }
-span:nth-child(7){
+
+span:nth-child(7) {
     top: 300px;
     right: 0px;
     left: initial;
     animation-delay: 1.2s;
     animation-duration: 1.75s;
 }
-span:nth-child(8){
+
+span:nth-child(8) {
     top: 0px;
     right: 700px;
     left: initial;
     animation-delay: 1.4s;
     animation-duration: 1.25s;
 }
-span:nth-child(9){
+
+span:nth-child(9) {
     top: 0px;
     right: 1000px;
     left: initial;
     animation-delay: 0.75s;
     animation-duration: 2.25s;
 }
-span:nth-child(9){
+
+span:nth-child(9) {
     top: 0px;
     right: 450px;
     left: initial;
     animation-delay: 2.75s;
     animation-duration: 2.75s;
 }
-span:nth-child(10){
+
+span:nth-child(10) {
     top: 0px;
     right: 1000px;
     left: initial;
@@ -362,31 +377,94 @@ span:nth-child(10){
     .card-title {
         font-size: 2.5rem;
     }
-    .icons{
+
+    .icons {
         display: inline-flex;
     }
 
-    .navbar{
+    .navbar {
         position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
         height: 17.7rem;
-        background: transparent ;
+        background: transparent;
         backdrop-filter: blur(50px);
     }
 
-    .navbar .links{
+    .navbar .links {
         display: block;
         font-size: 1.1rem;
         margin: 1.5rem 0;
-       
+
     }
 }
 
-@media (max-width: 992px){
-    .header{
+@media (max-width: 992px) {
+    .header {
         padding: 1rem 5%;
     }
 }
 
+.btn-container {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+
+}
+
+.svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+}
+
+.btn {
+    background-color: rgba(74, 132, 199, 0.5); 
+    z-index: 10;
+    color: white;
+    padding: 0.5rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    transition: 0.2s;
+    cursor: pointer;
+    backdrop-filter: blur(10px); 
+}
+
+
+.btn-container:hover {
+    box-shadow: rgba(66, 125, 194, 0.8) 0px 0px 54px;
+}
+
+.btn:hover {
+    outline: rgb(66, 125, 194) solid 2px;
+    background-color: #212121;
+}
+
+.btn-container:hover>.svg-1 {
+    transform: translate(130%, 50%);
+}
+
+.btn-container:hover>.svg-2 {
+    transform: translate(-120%, -150%) rotate(30deg);
+}
+
+.btn-container:hover>.svg-3 {
+    transform: translate(60%, -150%) rotate(-45deg);
+}
+
+.btn-container:hover>.svg-4 {
+    transform: translate(-280%, 0%) rotate(30deg);
+}
+
+.btn-container:hover>.svg-5 {
+    transform: translate(-80%, 60%) rotate(-45deg);
+}
+
+.btn:active {
+    transform: scale(1.05);
+}
