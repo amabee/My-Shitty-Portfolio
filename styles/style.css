@@ -157,6 +157,45 @@ body {
     right: 5%;
 }
 
+.image2 {
+    align-self: center;
+    z-index: 1;
+    animation: astroFloat 2s ease-in-out infinite, rotate 12s linear infinite;
+}
+
+@keyframes astroFloat {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(5deg);
+    }
+
+    25% {
+        transform: rotate(10deg);
+    }
+
+    50% {
+        transform: rotate(-20deg);
+    }
+
+    75% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(5deg);
+    }
+}
 
 
 @keyframes myAnim {
@@ -286,15 +325,15 @@ span:nth-child(1) {
     top: 0;
     right: 0;
     left: initial;
-    animation-delay: 0s;
-    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-duration: 3s;
 }
 
 span:nth-child(2) {
     top: 0;
     right: 80px;
     left: initial;
-    animation-delay: 0.2s;
+    animation-delay: 2.2s;
     animation-duration: 3s;
 }
 
@@ -302,7 +341,7 @@ span:nth-child(3) {
     top: 80;
     right: 0px;
     left: initial;
-    animation-delay: 0.4s;
+    animation-delay: 1.4s;
     animation-duration: 2s;
 }
 
@@ -310,7 +349,7 @@ span:nth-child(4) {
     top: 0;
     right: 180px;
     left: initial;
-    animation-delay: 0.6s;
+    animation-delay: 1.6s;
     animation-duration: 1.5s;
 }
 
@@ -318,7 +357,7 @@ span:nth-child(5) {
     top: 0;
     right: 400px;
     left: initial;
-    animation-delay: 0.8s;
+    animation-delay: 2.8s;
     animation-duration: 2.5s;
 }
 
@@ -326,7 +365,7 @@ span:nth-child(6) {
     top: 0;
     right: 600px;
     left: initial;
-    animation-delay: 1s;
+    animation-delay: 5s;
     animation-duration: 3s;
 }
 
@@ -334,40 +373,40 @@ span:nth-child(7) {
     top: 300px;
     right: 0px;
     left: initial;
-    animation-delay: 1.2s;
-    animation-duration: 1.75s;
+    animation-delay: 3.2s;
+    animation-duration: 2.75s;
 }
 
 span:nth-child(8) {
     top: 0px;
     right: 700px;
     left: initial;
-    animation-delay: 1.4s;
-    animation-duration: 1.25s;
+    animation-delay: 3.4s;
+    animation-duration: 2.25s;
 }
 
 span:nth-child(9) {
     top: 0px;
     right: 1000px;
     left: initial;
-    animation-delay: 0.75s;
-    animation-duration: 2.25s;
+    animation-delay: 2.75s;
+    animation-duration: 6.25s;
 }
 
 span:nth-child(9) {
     top: 0px;
     right: 450px;
     left: initial;
-    animation-delay: 2.75s;
-    animation-duration: 2.75s;
+    animation-delay: 4.75s;
+    animation-duration: 5.75s;
 }
 
 span:nth-child(10) {
     top: 0px;
     right: 1000px;
     left: initial;
-    animation-delay: 1.4s;
-    animation-duration: 1.25s;
+    animation-delay: 3.4s;
+    animation-duration: 5.25s;
 }
 
 
@@ -423,7 +462,7 @@ span:nth-child(10) {
 }
 
 .btn {
-    background-color: rgba(74, 132, 199, 0.5); 
+    background-color: rgba(74, 132, 199, 0.5);
     z-index: 10;
     color: white;
     padding: 0.5rem 2rem;
@@ -432,7 +471,7 @@ span:nth-child(10) {
     border-radius: 0.5rem;
     transition: 0.2s;
     cursor: pointer;
-    backdrop-filter: blur(10px); 
+    backdrop-filter: blur(10px);
 }
 
 
@@ -468,3 +507,207 @@ span:nth-child(10) {
 .btn:active {
     transform: scale(1.05);
 }
+
+
+/* ABOUT SECTION */
+
+.card2{
+    opacity: 90%;
+    max-width: 50rem;
+    height: auto;
+    padding: 40px;
+    border: 2px solid rgba(61, 59, 59, 0.25);
+    border-radius: 20px;
+    background-color: rgba(248, 248, 248, 0.45);
+    box-shadow: 0 20px 10px 20px rgba(0, 0, 0, 0.25);
+    color: white;
+    backdrop-filter: blur(10px);
+    position: relative;
+
+}
+
+.spaceship{
+    position: absolute;
+    margin: auto;
+    top: -80px;
+    right: 0;
+    left: 0;
+    transform: translateX(-22.5rem);    
+   
+}
+
+.centerBtn{
+    display: flex;
+    justify-content: center;
+   
+}
+.btnSpace {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 13rem;
+    height: 3rem;
+    background-size: 300% 300%;
+    backdrop-filter: blur(1rem);
+    border-radius: 5rem;
+    transition: 0.5s;
+    animation: gradient_301 5s ease infinite;
+    border: double 4px transparent;
+    background-image: linear-gradient(#212121, #212121),  linear-gradient(137.48deg, #ffdb3b 10%,#FE53BB 45%, #8F51EA 67%, #0044ff 87%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+  }
+  
+  #container-stars {
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: 0.5s;
+    backdrop-filter: blur(1rem);
+    border-radius: 5rem;
+  }
+  
+  strong {
+    z-index: 2;
+    font-family: 'Avalors Personal Use';
+    font-size: 12px;
+    letter-spacing: 5px;
+    color: #FFFFFF;
+    text-shadow: 0 0 4px white;
+  }
+  
+  #glow {
+    position: absolute;
+    display: flex;
+    width: 12rem;
+  }
+  
+  .circle {
+    width: 100%;
+    height: 30px;
+    filter: blur(2rem);
+    animation: pulse_3011 4s infinite;
+    z-index: -1;
+  }
+  
+  .circle:nth-of-type(1) {
+    background: rgba(254, 83, 186, 0.636);
+  }
+  
+  .circle:nth-of-type(2) {
+    background: rgba(142, 81, 234, 0.704);
+  }
+  
+  .btnSpace:hover #container-stars {
+    z-index: 1;
+    background-color: #212121;
+  }
+  
+  .btnSpace:hover {
+    transform: scale(1.1)
+  }
+  
+  .btnSpace:active {
+    border: double 4px #FE53BB;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    animation: none;
+  }
+  
+  .btnSpace:active .circle {
+    background: #FE53BB;
+  }
+  
+  #stars {
+    position: relative;
+    background: transparent;
+    width: 200rem;
+    height: 200rem;
+  }
+  
+  #stars::after {
+    content: "";
+    position: absolute;
+    top: -10rem;
+    left: -100rem;
+    width: 100%;
+    height: 100%;
+    animation: animStarRotate 90s linear infinite;
+  }
+  
+  #stars::after {
+    background-image: radial-gradient(#ffffff 1px, transparent 1%);
+    background-size: 50px 50px;
+  }
+  
+  #stars::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 170%;
+    height: 500%;
+    animation: animStar 60s linear infinite;
+  }
+  
+  #stars::before {
+    background-image: radial-gradient(#ffffff 1px, transparent 1%);
+    background-size: 50px 50px;
+    opacity: 0.5;
+  }
+  
+  @keyframes animStar {
+    from {
+      transform: translateY(0);
+    }
+  
+    to {
+      transform: translateY(-135rem);
+    }
+  }
+  
+  @keyframes animStarRotate {
+    from {
+      transform: rotate(360deg);
+    }
+  
+    to {
+      transform: rotate(0);
+    }
+  }
+  
+  @keyframes gradient_301 {
+    0% {
+      background-position: 0% 50%;
+    }
+  
+    50% {
+      background-position: 100% 50%;
+    }
+  
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes pulse_3011 {
+    0% {
+      transform: scale(0.75);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+  
+    70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+  
+    100% {
+      transform: scale(0.75);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+  }
+
+/* ABOUT ME SECTION END */
