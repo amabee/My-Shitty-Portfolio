@@ -1,14 +1,14 @@
-import React from 'react'
 import '../../styles/style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import { Container, Row, Col, Image } from 'react-bootstrap';
+import { Container, Row, Col, Image, Button } from 'react-bootstrap';
 import Link from 'next/link';
-
+import React from 'react';
 
 const about = () => {
   return (
     <div className='light'>
+
       <header className='header'>
         <h1 className="logo">A I A H</h1>
         <i className="bi bi-list icons"></i>
@@ -600,7 +600,7 @@ const about = () => {
             </button>
           </Link>
 
-          <Link className='links btn-container' href={"/"}>
+          <Link className='links btn-container' href={"/contact"}>
             <div className="svg svg-1">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" height="40px" width="40px">
 
@@ -1211,13 +1211,12 @@ const about = () => {
                 My journey in technology has been fueled by a deep curiosity and a drive to continuously learn and innovate.
               </p>
 
-              <div className="centerBtn">
+              <div className="centerBtn" data-toggle="modal" data-target="#exampleModal">
                 <button className="btnSpace" type="button">
                   <strong>MORE ABOUT ME</strong>
                   <div id="container-stars">
                     <div id="stars"></div>
                   </div>
-
                   <div id="glow">
                     <div className="circle"></div>
                     <div className="circle"></div>
@@ -1226,12 +1225,16 @@ const about = () => {
               </div>
 
             </div>
+            <Image src='/assets/spaceship_gif.gif' width={150} height={150} className='spaceship2'></Image>
           </div>
         </Container>
-
+       
       </section>
 
+
+
     </div>
+
   )
 }
 
