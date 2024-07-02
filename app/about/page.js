@@ -1212,23 +1212,25 @@ const about = () => {
               </p>
 
               <div className="centerBtn" data-toggle="modal" data-target="#exampleModal">
-                <button className="btnSpace" type="button">
-                  <strong>MORE ABOUT ME</strong>
-                  <div id="container-stars">
-                    <div id="stars"></div>
-                  </div>
-                  <div id="glow">
-                    <div className="circle"></div>
-                    <div className="circle"></div>
-                  </div>
-                </button>
+                <Link href={"/more_about"} style={{textDecoration:"none"}}>
+                  <button className="btnSpace" type="button">
+                    <strong>MORE ABOUT ME</strong>
+                    <div id="container-stars">
+                      <div id="stars"></div>
+                    </div>
+                    <div id="glow">
+                      <div className="circle"></div>
+                      <div className="circle"></div>
+                    </div>
+                  </button>
+                </Link>
               </div>
 
             </div>
             <Image src='/assets/spaceship_gif.gif' width={150} height={150} className='spaceship2'></Image>
           </div>
         </Container>
-       
+
       </section>
 
 
