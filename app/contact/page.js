@@ -907,7 +907,7 @@ const contact = () => {
                             </button>
                         </Link>
 
-                        <Link className='links btn-container' href={"/"}>
+                        <Link className='links btn-container' href={"/services"}>
                             <div className="svg svg-1">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" height="40px" width="40px">
 
@@ -1209,16 +1209,18 @@ const contact = () => {
                                 <h5 className="card-title"><i class="bi bi-facebook"></i></h5>
                                 <h3 className="card-text mt-4 text-center desc ">Contact me via FaceBook</h3>
                                 <div className="centerBtn" data-toggle="modal" data-target="#exampleModal">
-                                    <button className="btnSpace" type="button">
-                                        <strong>FACEBOOK</strong>
-                                        <div id="container-stars">
-                                            <div id="stars"></div>
-                                        </div>
-                                        <div id="glow">
-                                            <div className="circle"></div>
-                                            <div className="circle"></div>
-                                        </div>
-                                    </button>
+                                    <Link href="https://facebook.com/cocomelon.pan" passHref={true} style={{textDecoration:"none"}}>
+                                        <button className="btnSpace" type="button">
+                                            <strong>FACEBOOK</strong>
+                                            <div id="container-stars">
+                                                <div id="stars"></div>
+                                            </div>
+                                            <div id="glow">
+                                                <div className="circle"></div>
+                                                <div className="circle"></div>
+                                            </div>
+                                        </button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -1227,35 +1229,39 @@ const contact = () => {
                                 <h5 className="card-title"><i class="bi bi-twitter"></i></h5>
                                 <h3 className="card-text mt-4 text-center desc ">Contact me via Twitter / X</h3>
                                 <div className="centerBtn" data-toggle="modal" data-target="#exampleModal">
-                                    <button className="btnSpace" type="button">
-                                        <strong>TWITTER / X</strong>
-                                        <div id="container-stars">
-                                            <div id="stars"></div>
-                                        </div>
-                                        <div id="glow">
-                                            <div className="circle"></div>
-                                            <div className="circle"></div>
-                                        </div>
-                                    </button>
+                                    <Link href="https://x.com/kr_dubu" passHref={true} style={{ textDecoration: "none" }}>
+                                        <button className="btnSpace" type="button">
+                                            <strong>TWITTER / X</strong>
+                                            <div id="container-stars">
+                                                <div id="stars"></div>
+                                            </div>
+                                            <div id="glow">
+                                                <div className="circle"></div>
+                                                <div className="circle"></div>
+                                            </div>
+                                        </button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
-                        <div className="card card2 num3" style={{ width: "18rem" }}>
+                        <div className="card card2 num3" style={{ width: "18rem" }} >
                             <div className="card-body">
                                 <h5 className="card-title"><i class="bi bi-github"></i></h5>
 
                                 <h3 className="card-text mt-4 text-center desc ">Check out my GitHub</h3>
                                 <div className="centerBtn" data-toggle="modal" data-target="#exampleModal">
-                                    <button className="btnSpace" type="button">
-                                        <strong>GITHUB</strong>
-                                        <div id="container-stars">
-                                            <div id="stars"></div>
-                                        </div>
-                                        <div id="glow">
-                                            <div className="circle"></div>
-                                            <div className="circle"></div>
-                                        </div>
-                                    </button>
+                                    <Link href="https://github.com/amabee" passHref={true} style={{ textDecoration: "none" }}>
+                                        <button className="btnSpace" type="button">
+                                            <strong>GITHUB</strong>
+                                            <div id="container-stars">
+                                                <div id="stars"></div>
+                                            </div>
+                                            <div id="glow">
+                                                <div className="circle"></div>
+                                                <div className="circle"></div>
+                                            </div>
+                                        </button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -1264,16 +1270,18 @@ const contact = () => {
                                 <h5 className="card-title"><i class="bi bi-google"></i></h5>
                                 <h3 className="card-text mt-4 text-center desc ">Email me at my Gmail</h3>
                                 <div className="centerBtn" data-toggle="modal" data-target="#exampleModal">
-                                    <button className="btnSpace" type="button">
-                                        <strong>GMAIL</strong>
-                                        <div id="container-stars">
-                                            <div id="stars"></div>
-                                        </div>
-                                        <div id="glow">
-                                            <div className="circle"></div>
-                                            <div className="circle"></div>
-                                        </div>
-                                    </button>
+                                    <Link href="https://www.mail.google.com" passHref={true} style={{ textDecoration: "none" }}>
+                                        <button className="btnSpace" type="button">
+                                            <strong>GMAIL</strong>
+                                            <div id="container-stars">
+                                                <div id="stars"></div>
+                                            </div>
+                                            <div id="glow">
+                                                <div className="circle"></div>
+                                                <div className="circle"></div>
+                                            </div>
+                                        </button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
